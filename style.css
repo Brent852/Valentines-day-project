@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Courgette", serif;
+    font-family: "Courgette", serif;
 }
 
-h1{
+h1 {
     font-size: 45px;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body{
     background-color: aliceblue;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -29,17 +29,23 @@ body{
 
 }
 
-.container .tenor-gif-embed{
-    display: flex;
-    max-width: 300px;
+.gif-container {
+    margin-bottom: 20px;
 }
 
-.container .btn{
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container .btn {
     display: flex;
+    justify-content: center;
     gap: 75px;
 }
 
-.btn a{
+.btn a {
+    display: flex;
     text-decoration: none;
     color: rgb(255, 255, 255);
     background: #677b8f;
