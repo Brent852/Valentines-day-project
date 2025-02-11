@@ -1,11 +1,11 @@
-const b = document.querySelector('btn.button--no')
-b.addEventListener("mouseover", moveHover)
-
-function moveHover(){
-    const i = Math.floor(Math.random()*500)+1 ;
-    const j = Math.floor(Math.random()*500)+1 ;
-
-    b.style.left = i + "px"
-    b.style.top = j + "px"
-
+function moveRandomE1(elm){
+    elm.style.position = "absolute";
+    elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
+    elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
 }
+
+const moveRandom = document.querySelector('#move-random');
+
+moveRandom.addEventListener("mouseenter", function(e){
+    moveRandomE1(e.target)
+});
