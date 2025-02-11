@@ -18,20 +18,33 @@ body{
     background-color: aliceblue;
 }
 
-
-.btn{
-    margin-top: 50px;
-}
-button{
-    position: absolute;
+.container{
     display: flex;
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 10px 30px;
-    background-color: rgb(147, 189, 223);
-    border: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px;
+
 }
 
-.button--no{
-    right: 50%;
+.container .tenor-gif-embed{
+    display: flex;
+    max-width: 300px;
+}
+
+.container .btn{
+    display: flex;
+    gap: 75px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #677b8f;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0.3);
+
 }
