@@ -10,31 +10,47 @@ h1 {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex; 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Courgette', cursive;
-    background-color: #f0f0f0;
+    background-color: aliceblue;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: relative;
-    z-index: 1;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px;
+
 }
 
 .gif-container {
     margin-bottom: 20px;
 }
 
-.gif-container iframe {
+.gif-container img {
     max-width: 100%;
     height: auto;
+}
+
+.container .btn {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+.btn a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: #677b8f;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0.3);
+
 }
